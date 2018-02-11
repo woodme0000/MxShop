@@ -1,0 +1,8 @@
+The API is where things get interesting. The access to the blogposts is exposed through a DRF ModelViewSet, which provides the usual actions:
+
+list: GET /api/blogposts/ List all blogposts.
+create: POST /api/blogposts/ Create a new blogpost.
+retrieve: GET /api/blogposts/(?P<pk>[^/.]+)/ Show the details of a specific blogpost.
+update: PUT /api/blogposts/(?P<pk>[^/.]+)/ Update all fields of a specific blogpost.
+partial update: PATCH /api/blogposts/(?P<pk>[^/.]+)/ Update a field of a specific blogpost.
+destroy: DELETE /api/blogposts/(?P<pk>[^/.]+)/ Delete a specific blogpost.
